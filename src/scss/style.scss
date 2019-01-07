@@ -1,0 +1,292 @@
+@import "vars.scss";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #4aa272;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+}
+
+.wrapper-form {
+  width: 45%;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  margin: auto;
+}
+
+/*    login   register   block         */
+.tabs-register-box {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.tabs-register-box li {
+  display: flex;
+  width: 100%;
+  height: 540px;
+}
+
+.tabs-register-box li > input {
+  display: none;
+}
+
+.tabs-register-box li > label {
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 100px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: ease .5s;
+
+  &:hover {
+    background-color: darken(#e1e1e1, 3%);
+  }
+}
+
+.tabs-register-box li:last-child > label {
+  border-right-width: 1px;
+}
+
+.tabs-register-box .tab-content {
+  display: none;
+  position: absolute;
+  padding-top: 50px;
+}
+
+.tabs-register-box li > input:checked + label {
+  background-color: #e1e1e1;
+  color: #fff;
+}
+
+.tabs-register-box li > input:checked ~ .tab-content {
+  display: block;
+}
+/*********  login and register  **************/
+
+
+/************   form   *******************/
+.input-login-form, .input-register-form {
+  display: block;
+  margin: 90px 45px 0;
+  width: 80%;
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+ }
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 45px;
+  padding: 13px 2px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.6s ease;
+  outline: none;
+
+   &:focus {
+     border-bottom: 2px solid #16a085;
+     color: #16a085;
+     transition: 0.2s ease;
+   }
+
+    &::-webkit-input-placeholder {color: $green;}
+    &::-moz-placeholder {color: $green;}
+    &:-ms-input-placeholder {color: $green;}
+}
+
+
+
+.link-btn {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+
+    a {
+      color: #c7dee8;
+      text-decoration: none;
+      transition: ease .5s;
+
+      &:hover {
+        color: darken(#c7dee8, 20%);
+      }
+    }
+
+  .signin-btn {
+    border: transparent;
+    outline: none;
+    color: #fff;
+    background-color: $green;
+    font-size: 18px;
+    padding: 14px 35px;
+    cursor: pointer;
+    transition: ease .5s;
+
+    &:hover {
+      background-color: darken($green, 5%);
+    }
+  }
+}
+
+
+}
+
+.input-register-form {
+  margin-left: -43%;
+
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .signin-btn {
+    padding: 18px 12px;
+    margin: auto;
+    display: block;
+    margin-top: -20px;
+    background-color: $green;
+    outline: none;
+    border: transparent;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: ease .5s;
+
+    &:hover {
+      background-color: darken($green, 5%);
+    }
+
+  }
+}
+/***********   form   end  ****************/
+
+
+/*********** signin ************/
+.signin {
+  display: flex;
+  background-color: #3064a0;
+  width: 100%;
+  height: 70px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+  .facebook-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 100%;
+
+    & a {
+      display: block;
+      background: $facebook-link;
+      height: 100%;
+      transition: ease .5s;
+
+      &:hover {
+        background-color: darken($facebook-link, 5%);
+      }
+
+      & i {
+        color: #fff;
+        font-size: 35px;
+        padding: 12px 58px;
+      }
+    }
+  }
+
+  .facebook-text {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    opacity: .7;
+    transition: ease .5s;
+
+    &:hover {
+      opacity: .4;
+    }
+  }
+
+  .facebook-white-text {
+    color: #fff;
+  }
+}
+
+.signin:last-child {
+  background-color: #c84a4b;
+
+  .google-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 100%;
+    color: #fff;
+    background: #c84a4b;
+
+
+    a {
+      display: block;
+      background: $google-link;
+      height: 100%;
+      transition: ease .5s;
+
+      &:hover {
+        background-color: darken($google-link, 5%);
+      }
+
+      & i {
+        color: #fff;
+        font-size: 35px;
+        padding: 12px 58px;
+      }
+    }
+  }
+
+  .google-text {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    opacity: .7;
+    transition: ease .5s;
+
+    &:hover {
+      opacity: .4;
+    }
+  }
+
+  .google-white-text {
+    color: #fff;
+  }
+}
+/************* signin  end *******************/
+
+@import "./media.scss";

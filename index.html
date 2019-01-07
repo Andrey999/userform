@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="build/css/all.css">
+</head>
+<body>
+
+    <div class="wrapper-form">
+
+        <ul class="tabs-register-box">
+            <li>
+                <input type="radio" name="tabs" id="tab-1" checked>
+                <label for="tab-1">Login</label>
+                <form action="" class="tab-content input-login-form">
+                    <label for="email">Email</label><input type="text" name="email" placeholder="E-mail" id="email"/>
+                    <label for="password">Password</label><input type="password" name="password" placeholder="Password" id="password"/>
+                    <div class="link-btn">
+                        <p class="input-form-link"><a href="#">Forgot password?</a></p>
+                        <button class="signin-btn">Signin</button>
+                    </div>
+                </form>
+            </li>
+
+            <li>
+                <input type="radio" name="tabs" id="tab-2">
+                <label for="tab-2">Register</label>
+                <form action="" class="tab-content input-register-form">
+                <label for="registr-email">Email</label><input type="text" name="email" placeholder="E-mail" id="registr-email"/>
+                <label for="registr-password1">Пароль</label><input type="password" name="password" placeholder="Password" id="registr-password1"/>
+                <label for="registr-password2">Подтвердите пароль</label><input type="password" name="password" placeholder="Password" id="registr-password2"/>
+                <button class="signin-btn">Зарегистрироваться</button>
+                </form>
+            </li>
+
+        </ul>
+
+        <div class="signin">
+            <div class="facebook-icon"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+            <a href="#" class="facebook-text">Sign in with</a><span
+                class="facebook-white-text">&nbsp;&nbsp;Facebook</span>
+        </div>
+
+        <div class="signin">
+            <div class="google-icon"><a href="#"><i class="fab fa-google-plus-g"></i></a></div>
+            <a href="#" class="google-text">Sign in with</a><span class="google-white-text">&nbsp;&nbsp;Google+</span>
+        </div>
+
+    </div> <!-- .wrapper-form-->
+
+<script src="build/js/all.js"></script>
+</body>
+</html>

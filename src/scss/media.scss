@@ -1,0 +1,76 @@
+/*   less  1200px     */
+@media screen and (max-width: 1200px) {
+  .wrapper-form {
+    width: 55%;
+
+
+  }
+}
+
+/*   less  992px     */
+@media screen and (max-width: 992px) {
+  .wrapper-form {
+    width: 65%;
+  }
+}
+
+/*   less  768px     */
+@media screen and (max-width: 768px) {
+  .wrapper-form {
+    width: 75%;
+
+    .facebook-text, .google-text {
+      padding-left: 50px;
+    }
+  }
+}
+
+/*   less  600px     */
+@media screen and (max-width: 600px) {
+  .wrapper-form {
+    width: 90%;
+
+    .facebook-text, .google-text {
+      padding-left: 70px;
+    }
+  }
+}
+
+/*   less  479px     */
+@media screen and (max-width: 479px) {
+  body {
+    background: #fff;
+  }
+
+  .wrapper-form {
+    width: 100%;
+    margin-top: 0;
+
+    .tabs-register-box {
+      margin: 0 0 78px;
+    }
+
+    .tabs-register-box .tab-content {
+      padding-top: 100px;
+    }
+
+
+    .input-login-form {
+        margin: 90px 23px 0;
+        width: 85%;
+    }
+
+    .input-register-form {
+      margin-left: -45%;
+      width: 85%;
+    }
+
+    .link-btn {
+      padding-top: 50px;
+    }
+
+    .facebook-text, .google-text {
+      padding-left: 138px;
+    }
+  }
+}
