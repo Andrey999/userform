@@ -1,2 +1,2 @@
-# userform, only html, css, not js.
+# userform, only html, css, without js.
 # github pages:  https://andrey999.github.io/userform/
